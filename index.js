@@ -41,6 +41,8 @@ app
   .route('/webhook/event')
   .post(handleInboundEvent)
 
+app
+  .route('/webhook/status')
 function handleInboundMessage(request, response) 
 {
   // handle inbound message SMS and WhatsApp
